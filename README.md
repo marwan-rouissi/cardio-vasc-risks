@@ -8,14 +8,21 @@
     - Les analyses
     - La conclusion
 
-- **Un notebook Python :**   
+- **Un notebook Python `cardio-vasc-risks.ipynb` :**   
   - Analyse Exploratoire de notre jeu de données `cardio_train.csv`
   - Procédé de développement d'un modèle de régression logistique
   - Nettoyage à la modélisation des données
   - Réponse à la problématique posée
 
 ## Contexte du projet.
-[Contexte]
+Mieux vaut prévenir que guérir.   
+
+Chaque année en France entre 300 000 et 400 000 accidents cardio-vasculaires surviennent, dont un tiers sont mortels.   
+Il n'est plus à démontrer aujourd'hui que l'hygiène de vie d'un individu joue un rôle majeur quant à sa condition et son état de santé.   
+
+Le but de ce projet est de mettre en oeuvre un régression logistique afin d'analyser une variable binaire en fonction d'une variable explicative quantitative.   
+Afin de mieux imager la chose, nous nous projettons dans un contexte médical.
+À partir d'un jeu de données représentatif d'un panel de la population et caractérisé par un ensemble de variables, nous allons chercher à analyser et prédire les risques cardio-vasculaires.
 
 ## Veille sur la régression logistique.
 ![alt text](img/image-1.png)
@@ -43,8 +50,9 @@ On comprend ainsi que ce que l'on attend de notre fonction h, c'est qu'elle soit
 La fonction qui remplit le mieux ces conditions est la **fonction sigmoïde**, définie sur R à valeurs dans [0,1] et qui s'écrit de la manière suivante :   
 $$σ(x) = \frac{1}{1 + e^{-x}} = p$$
 - **Graphiquement :**  
-elle correspond à une **courbe en forme de S** qui a pour limite 0 et 1 lorsque x tend respectivement vers -∞ et +∞ passant par y = 0.05 en x = 0.
-![alt text](img/image.png)
+elle correspond à une **courbe en forme de S** qui a pour limite 0 et 1 lorsque x tend respectivement vers -∞ et +∞ passant par y = 0.05 en x = 0.   
+
+  ![alt text](img/image.png)
 
 - Pour une seule variable explicative **X** , l'équation de la courbe logistique est : 
 $$P(X) = \frac{{\exp(\beta_0 + \beta_1X)}}{{1 + \exp(\beta_0 + \beta_1X)}}$$
