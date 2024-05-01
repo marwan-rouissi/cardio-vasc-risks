@@ -25,7 +25,7 @@ Afin de mieux imager la chose, nous nous projettons dans un contexte médical.
 À partir d'un jeu de données représentatif d'un panel de la population et caractérisé par un ensemble de variables, nous allons chercher à analyser et prédire les risques cardio-vasculaires.
 
 ## Veille sur la régression logistique.
-![alt text](img/image-1.png)
+![alt text][def2]
 ### - La régression logistique, qu'est ce que c'est ? 
 La **régression logistique** (ou **modèle logit**) est un modèle statistique permettant d'étudier les relations entre un ensemble de variables catégorielles **X** et une variable catégorielle **y** .  
 Il s'agit d'un modèle linéaire généralisé utilisant une fonction logistique comme fonction lien.  
@@ -52,7 +52,7 @@ $$σ(x) = \frac{1}{1 + e^{-x}} = p$$
 - **Graphiquement :**  
 elle correspond à une **courbe en forme de S** qui a pour limite 0 et 1 lorsque x tend respectivement vers -∞ et +∞ passant par y = 0.05 en x = 0.   
 
-  ![alt text](img/image.png)
+  ![alt text][def]
 
 - Pour une seule variable explicative **X** , l'équation de la courbe logistique est : 
 $$P(X) = \frac{{\exp(\beta_0 + \beta_1X)}}{{1 + \exp(\beta_0 + \beta_1X)}}$$
@@ -116,3 +116,6 @@ active | état d'activité physique | 0 = non <br> 1 = oui | Entier (int) | cat�
 cardio | indique si le patient est sujet à risque cardio-vasculaire | 0 = non <br> 1 = oui | Entier (int) | catégorielle | nominale |
 
 *mmHg : millimètre de Mercure, unité de mesure de la pression
+
+[def]: img/image.png
+[def2]: img/image-1.png
