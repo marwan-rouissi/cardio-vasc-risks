@@ -117,5 +117,5 @@ cardio | indique si le patient est sujet à risque cardio-vasculaire | 0 = non <
 
 *mmHg : millimètre de Mercure, unité de mesure de la pression
 
-[def]: img/image.png
+[def]: img/sigmoid.png
 [def2]: img/image-1.png
