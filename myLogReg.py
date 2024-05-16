@@ -35,28 +35,3 @@ class MyLogReg:
         y_predicted = self.predict(X)
         accuracy = np.mean(y_predicted == y)
         return accuracy
-    
-    # def confusion_matrix(self, y_true, y_pred):
-    #     n_classes = len(np.unique(y_true))
-    #     matrix = np.zeros((n_classes, n_classes))
-    #     for i in range(len(y_true)):
-    #         matrix[y_true[i], y_pred[i]] += 1
-    #     return matrix
-    
-    # def classification_report(self, y_true, y_pred):
-    #     n_classes = len(np.unique(y_true))
-    #     matrix = np.zeros((n_classes, n_classes))
-    #     for i in range(len(y_true)):
-    #         matrix[y_true[i], y_pred[i]] += 1
-    #     return matrix
-    
-    # def train_test_split(self, X, y, test_size=0.2, random_state=None):
-    #     np.random.seed(random_state)
-    #     n_samples = X.shape[0]
-    #     test_size = int(n_samples * test_size)
-    #     indices = np.random.permutation(n_samples)
-    #     X = X[indices]
-    #     y = y[indices]
-    #     X_train, X_test = X[test_size:], X[:test_size]
-    #     y_train, y_test = y[test_size:], y[:test_size]
-    #     return X_train, X_test, y_train, y_test
