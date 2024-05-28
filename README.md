@@ -6,6 +6,7 @@
     - Veille sur la régression logistique.
     - Les données
     - Les analyses
+    - Les algorithmes utilisés
     - La conclusion
 
 - **Un notebook Python `cardio-vasc-risks.ipynb` :**   
@@ -20,7 +21,7 @@ Mieux vaut prévenir que guérir.
 Chaque année en France entre 300 000 et 400 000 accidents cardio-vasculaires surviennent, dont un tiers sont mortels.   
 Il n'est plus à démontrer aujourd'hui que l'hygiène de vie d'un individu joue un rôle majeur quant à sa condition et son état de santé.   
 
-Le but de ce projet est de mettre en oeuvre un régression logistique afin d'analyser une variable binaire en fonction d'une variable explicative quantitative.   
+Le but de ce projet est de mettre en oeuvre une régression logistique afin d'analyser une variable binaire en fonction d'une variable explicative quantitative.   
 Afin de mieux imager la chose, nous nous projettons dans un contexte médical.
 À partir d'un jeu de données représentatif d'un panel de la population et caractérisé par un ensemble de variables, nous allons chercher à analyser et prédire les risques cardio-vasculaires.
 
@@ -97,7 +98,7 @@ Je vous laisse le plaisir de le découvrir par vous même en explorant ce projet
 - https://delladata.fr/regression-logistique/
 
 ## Les données.
-Notre jeu de données se compose des variables (colonnes) suivantes :
+Notre jeu de données, pré-traitement, se compose des variables (colonnes) suivantes :
 
 
 | Nom de la colonne | Définition | Unité | Type de variable | Type de donnée |   |
@@ -116,6 +117,40 @@ active | état d'activité physique | 0 = non <br> 1 = oui | Entier (int) | cat�
 cardio | indique si le patient est sujet à risque cardio-vasculaire | 0 = non <br> 1 = oui | Entier (int) | catégorielle | nominale |
 
 *mmHg : millimètre de Mercure, unité de mesure de la pression
+
+
+## Les analyses.
+Notre jeu de données est majoritairement représenté par une population féminine.  
+La tranche d'âge est de 30-65ans.  
+
+Dans l'ensemble on observe que, pris indépendament, beaucoup de facteurs tels que :
+- tabagisme
+- consommation d'alcool
+- sédentarité
+
+Ne suffisent pas a expliquer le risque de maladies cardio-vasculaire.
+
+À l'inverse,les facteurs tels que : 
+- le cholestérol
+- le glucose
+- l'IMC (BMI)
+
+Pris individuellement, expliquent une partie de cette relation.
+
+## Les algorithmes utilisés.
+
+- Regression logistique binaire
+    - Sklearn
+    - Ma Classe
+
+## Conclusion.
+Les maladies cardio-vasculaires sont un problème de santé majeur dans le monde.  
+L'analyse des facteurs de risque des maladies cardio-vasculaire peut aider à prevenir et à traiter ces maladies.  
+Les modèles de ML tels que la régression logistique peuvent être utilisés pour prédire les maladies cardio-vasculaires et aider à prendre des décisions médicales éclairées.  
+Bien que ce ne soit pas vraiment démontrer dans ce projet ;  
+la normalisation des données et la recherche des meilleurs hyperparamètres sont des étapes importantes dans le développement de modèles de ML pour la prédiction des maladies cardio-vasculaires.  
+La prédiction des maladies cardio-vasculaires peut être utilisée pour identifier les personnes à risque et leur fournir des soins médicaux appropriés.  
+La prévention des maladies cardio-vasculaire est essentielle pour améliorer la santé et le bien-être des individus et des populations.  
 
 [def]: img/sigmoid.png
 [def2]: img/image-1.png
