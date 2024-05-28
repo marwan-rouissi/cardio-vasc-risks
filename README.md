@@ -90,13 +90,6 @@ Peut permettre d'expliquer des variables discrètes, comme les intentions de vot
 ### - Comment l'appliquer ? 
 Je vous laisse le plaisir de le découvrir par vous même en explorant ce projet !
 
-### sources :
-- https://www.youtube.com/watch?v=yIYKR4sgzI8
-- https://www.ibm.com/fr-fr/topics/logistic-regression
-- https://datascientest.com/regression-logistique-quest-ce-que-cest
-- https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique
-- https://delladata.fr/regression-logistique/
-
 ## Les données.
 Notre jeu de données, pré-traitement, se compose des variables (colonnes) suivantes :
 
@@ -151,6 +144,13 @@ Bien que ce ne soit pas vraiment démontrer dans ce projet ;
 la normalisation des données et la recherche des meilleurs hyperparamètres sont des étapes importantes dans le développement de modèles de ML pour la prédiction des maladies cardio-vasculaires.  
 La prédiction des maladies cardio-vasculaires peut être utilisée pour identifier les personnes à risque et leur fournir des soins médicaux appropriés.  
 La prévention des maladies cardio-vasculaire est essentielle pour améliorer la santé et le bien-être des individus et des populations.  
+
+### sources :
+- https://www.youtube.com/watch?v=yIYKR4sgzI8
+- https://www.ibm.com/fr-fr/topics/logistic-regression
+- https://datascientest.com/regression-logistique-quest-ce-que-cest
+- https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique
+- https://delladata.fr/regression-logistique/
 
 [def]: img/sigmoid.png
 [def2]: img/image-1.png
